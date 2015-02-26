@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="E:/foryiyou/YiYou/yiyouapp/libs/android-support-v4.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/foryiyou/YiYou/yiyouapp/libs/mframework.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/foryiyou/YiYou/yiyouapp/libs/BaiduLBS_Android.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="E:/foryiyou/YiYou/yiyouapp/libs/android_api_3_5.jar"/>
+	<classpathentry kind="lib" path="E:/foryiyou/YiYou/yiyouapp/libs/android-async-http-1.4.5.jar"/>
+	<classpathentry kind="lib" path="E:/foryiyou/YiYou/yiyouapp/libs/libpuremvc.jar"/>
+	<classpathentry kind="lib" path="E:/foryiyou/YiYou/yiyouapp/libs/pushservice-4.1.0.jar"/>
+	<classpathentry kind="lib" path="E:/foryiyou/YiYou/yiyouapp/libs/ShareSDK-Core-2.4.2.jar"/>
+	<classpathentry kind="lib" path="E:/foryiyou/YiYou/yiyouapp/libs/ShareSDK-Email-2.4.2.jar"/>
+	<classpathentry kind="lib" path="E:/foryiyou/YiYou/yiyouapp/libs/ShareSDK-QQ-2.4.2.jar"/>
+	<classpathentry kind="lib" path="E:/foryiyou/YiYou/yiyouapp/libs/ShareSDK-ShortMessage-2.4.2.jar"/>
+	<classpathentry kind="lib" path="E:/foryiyou/YiYou/yiyouapp/libs/ShareSDK-SinaWeibo-2.4.2.jar"/>
+	<classpathentry kind="lib" path="E:/foryiyou/YiYou/yiyouapp/libs/ShareSDK-SouhuMicroBlog-2.4.2.jar"/>
+	<classpathentry kind="lib" path="E:/foryiyou/YiYou/yiyouapp/libs/ShareSDK-TencentWeibo-2.4.2.jar"/>
+	<classpathentry kind="lib" path="E:/foryiyou/YiYou/yiyouapp/libs/ShareSDK-Wechat-2.4.2.jar"/>
+	<classpathentry kind="lib" path="E:/foryiyou/YiYou/yiyouapp/libs/ShareSDK-Wechat-Core-2.4.2.jar"/>
+	<classpathentry kind="lib" path="E:/foryiyou/YiYou/yiyouapp/libs/ShareSDK-Wechat-Favorite-2.4.2.jar"/>
+	<classpathentry kind="lib" path="E:/foryiyou/YiYou/yiyouapp/libs/ShareSDK-Wechat-Moments-2.4.2.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>
