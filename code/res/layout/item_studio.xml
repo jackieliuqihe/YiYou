@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+	android:padding="6dp"
+    android:background="@drawable/work_list_item_bg"
+    android:minHeight="?android:attr/listPreferredItemHeight"  >
+
+    <ImageView
+        android:id="@+id/user_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="left"
+        android:src="@drawable/default_avatar_100" />
+    
+    <LinearLayout
+	  android:layout_width="match_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="vertical"
+	  android:layout_marginLeft="2dp"
+	  android:layout_toRightOf="@id/user_avatar" >
+	  
+	    <TextView
+	  		android:id="@+id/user_name"
+	  		android:layout_width="wrap_content"
+	  		android:layout_height="wrap_content"
+			android:layout_marginLeft="4dp"
+	  		android:gravity="left"
+	  		android:text="用户名"
+	  		android:textColor="#233340"
+	  		android:textSize="14sp" />
+     
+        <TextView
+      		android:id="@+id/user_location"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+    		android:layout_marginLeft="4dp"
+	  		android:layout_marginTop="1dp"
+      		android:text="用户位置"
+      		android:textColor="@color/gray_color"
+      		android:textSize="12sp" />
+        
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+			android:layout_marginLeft="4dp"
+	  		android:layout_marginTop="2dp">
+	        
+	        <TextView
+	      		android:id="@+id/train_info"
+	      		android:layout_width="wrap_content"
+	      		android:layout_height="wrap_content"
+	      		android:layout_alignParentLeft="true"
+	      		android:layout_centerVertical="true"
+	      		android:gravity="left"
+	      		android:text="招生城市：杭州"
+	      		android:textColor="@color/top_right_btn_bg_color"
+	      		android:textSize="12sp" />
+	       
+	        <TextView
+	      		android:id="@+id/works_count"
+	      		android:layout_width="wrap_content"
+	      		android:layout_height="wrap_content"
+	      		android:layout_alignParentRight="true"
+	      		android:layout_centerVertical="true"
+	    		android:layout_marginRight="4dp"
+	      		android:text="作品数"
+	      		android:textColor="@color/gray_color"
+	      		android:textSize="12sp" />
+	       
+	    </RelativeLayout>
+	    
+        <TextView
+      		android:id="@+id/user_desc"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+			android:layout_marginLeft="4dp"
+	  		android:layout_marginTop="1dp"
+	  		android:lines="1"
+      		android:text="用户简介"
+      		android:textColor="@color/gray_color"
+      		android:textSize="12sp" />
+       
+    </LinearLayout>
+	    
+</RelativeLayout>

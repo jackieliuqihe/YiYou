@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/user_info_rl"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+    android:background="@android:color/white" >
+
+<RelativeLayout
+    android:id="@+id/work_info_rl"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:visibility="gone"
+	android:paddingLeft="6dp"
+	android:paddingRight="6dp"
+	android:paddingTop="6dp"
+	android:paddingBottom="10dp"
+	android:background="@drawable/top_comment_bg" >
+    
+	<ImageView
+		android:id="@+id/user_avatar"
+		android:layout_width="52dp"
+		android:layout_height="52dp"
+		android:paddingLeft="4dp"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginRight="6dp"
+		android:gravity="left"
+		android:src="@drawable/default_avatar_50" />
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:orientation="vertical"
+		android:layout_toRightOf="@id/user_avatar" >
+		 
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="8dp">
+			
+			<TextView
+				android:id="@+id/user_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentLeft="true"
+				android:layout_marginRight="60dp"
+				android:singleLine="true" 
+				android:gravity="left"
+				android:textColor="#233340"
+				android:textSize="14sp" />
+		   
+			<TextView
+				android:id="@+id/upload_time"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="4dp"
+				android:gravity="right"
+				android:textColor="@color/gray_color"
+				android:textSize="12sp" />
+		   
+		</RelativeLayout>
+		
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			
+			<ImageView
+				android:id="@+id/sex_type"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:gravity="left"
+				android:src="@drawable/icon_male" />
+			
+			<TextView
+				android:id="@+id/user_type"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@id/sex_type"
+				android:layout_marginLeft="8dp"
+				android:textColor="@color/gray_color"
+				android:textSize="12sp" />
+		   
+			<TextView
+				android:id="@+id/user_location"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@id/user_type"
+				android:layout_marginLeft="8dp"
+				android:textColor="@color/gray_color"
+				android:textSize="12sp" />
+			
+			<TextView
+				android:id="@+id/user_distance"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@id/user_location"
+				android:layout_marginLeft="8dp"
+				android:textColor="@color/gray_color"
+				android:textSize="12sp" />
+		   
+		</RelativeLayout>
+				
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="4dp">
+			
+			<TextView
+				android:id="@+id/work_desc"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:ellipsize="end"
+				android:layout_marginRight="4dp"
+				android:layout_marginTop="4dp"
+				android:gravity="left"
+				android:maxLines="2"
+				android:textColor="#656565"
+				android:textSize="12sp" />
+			
+		</RelativeLayout>
+				
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="4dp" >
+	
+			<ImageView
+				android:id="@+id/work_thumb"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentLeft="true"
+				android:layout_marginRight="4dp"
+				android:layout_marginTop="4dp"
+				android:src="#e2e2e2"
+				android:background="#e2e2e2" />
+				
+		</RelativeLayout>
+				
+	</LinearLayout>
+	
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/comment_loading_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:paddingTop="20dp"
+    android:visibility="gone"
+    android:background="@color/light_gray_color" >
+    
+    <ProgressBar
+       android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+       	android:layout_centerVertical="true"
+       	android:layout_centerHorizontal="true"
+    	style="?android:attr/progressBarStyleLarge" />
+    
+    <TextView
+        android:id="@+id/loading_text"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_below="@id/progressBar"
+  		android:layout_centerHorizontal="true"
+		android:layout_marginTop="20dp"
+  		android:text="  正在加载..."
+  		android:textColor="@android:color/black"
+  		android:textSize="12sp" />
+   
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/comment_none_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:paddingTop="20dp"
+    android:visibility="gone"
+    android:background="@color/light_gray_color" >
+    
+    <TextView
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_centerHorizontal="true"
+		android:layout_marginTop="20dp"
+  		android:text="暂无评论，你是第一个抢沙发的人"
+  		android:textColor="#999999"
+  		android:textSize="12sp" />
+   
+</RelativeLayout>
+
+</LinearLayout>

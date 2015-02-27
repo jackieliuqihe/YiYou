@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">艺友</string>
+    <string name="action_settings">设置</string>
+    
+    <color name="top_title_bar_bg_color">#1e3344</color>
+    <color name="top_right_btn_bg_color">#3caaf9</color>
+    
+    <color name="title_font_color">#b5b5b5</color>
+    <color name="red_color">#FF5B3F</color>
+    <color name="gray_color">#999999</color>
+    <color name="light_gray_color">#f5f5f5</color>
+    
+    <color name="bottom_btn_bg_color">#274359</color>
+
+    <string name="pull_to_refresh_pull_label">下拉获取数据...</string>
+    <string name="pull_to_refresh_release_label">释放获取数据...</string>
+    <string name="pull_to_refresh_refreshing_label">正在获取数据…</string>
+
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">上拉获取数据...</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    
+</resources>

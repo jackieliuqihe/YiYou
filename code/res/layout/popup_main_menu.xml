@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/menu_border"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <RelativeLayout
+   		android:id="@+id/menu_item1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:padding="12dp"
+		android:clickable="true"
+		android:background="@drawable/menu_item">
+		
+	    <ImageView
+	        android:id="@+id/user_avatar"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:gravity="left"
+	        android:src="@drawable/default_avatar_50" />
+	    
+        <TextView
+      		android:id="@+id/menu_item1_text"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+      		android:layout_centerVertical="true"
+      		android:layout_toRightOf="@id/user_avatar"
+      		android:layout_marginLeft="8dp"
+        	android:singleLine="true" 
+      		android:textColor="@color/title_font_color"
+      		android:textSize="18sp" />
+       
+    </RelativeLayout>
+
+    <RelativeLayout
+   		android:id="@+id/menu_item2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:padding="12dp"
+		android:clickable="true"
+		android:background="@drawable/menu_item">
+		
+	    <ImageView
+	        android:id="@+id/menu_item2_icon"
+	        android:layout_width="24dp"
+	        android:layout_height="24dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:gravity="left"
+	        android:src="@drawable/icon_news" />
+	    
+        <TextView
+      		android:id="@+id/menu_item2_text"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+      		android:layout_toRightOf="@id/menu_item2_icon"
+      		android:layout_centerVertical="true"
+      		android:layout_marginLeft="8dp"
+      		android:text="我的消息"
+      		android:textColor="@color/title_font_color"
+      		android:textSize="18sp" />
+       
+	    <ImageView
+      		android:id="@+id/menu_item2_dot"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+      		android:layout_toRightOf="@id/menu_item2_text"
+	        android:src="@drawable/my_news_dot"
+	        android:visibility="gone" />
+	    
+    </RelativeLayout>
+    
+    <RelativeLayout
+   		android:id="@+id/menu_item3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:padding="12dp"
+		android:clickable="true"
+		android:background="@drawable/menu_item">
+		
+	    <ImageView
+	        android:id="@+id/menu_item3_icon"
+	        android:layout_width="24dp"
+	        android:layout_height="24dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:gravity="left"
+	        android:src="@drawable/icon_collection" />
+	    
+        <TextView
+      		android:id="@+id/menu_item3_text"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+      		android:layout_toRightOf="@id/menu_item3_icon"
+      		android:layout_centerVertical="true"
+      		android:layout_marginLeft="8dp"
+      		android:text="我的收藏"
+      		android:textColor="@color/title_font_color"
+      		android:textSize="18sp" />
+       
+    </RelativeLayout>
+    
+    <RelativeLayout
+   		android:id="@+id/menu_item4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:padding="12dp"
+		android:clickable="true"
+		android:background="@drawable/menu_item">
+		
+	    <ImageView
+	        android:id="@+id/menu_item4_icon"
+	        android:layout_width="24dp"
+	        android:layout_height="24dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:gravity="left"
+	        android:src="@drawable/icon_perference" />
+	    
+        <TextView
+      		android:id="@+id/menu_item4_text"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+      		android:layout_toRightOf="@id/menu_item4_icon"
+      		android:layout_centerVertical="true"
+      		android:layout_marginLeft="8dp"
+      		android:text="设置"
+      		android:textColor="@color/title_font_color"
+      		android:textSize="18sp" />
+       
+    </RelativeLayout>
+    
+</LinearLayout>

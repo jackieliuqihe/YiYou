@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal">
+    <RelativeLayout 
+        android:id="@+id/top_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/top_title_bar_bg_color">
+        
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_btn_back" />
+        
+        <TextView
+        	android:id="@+id/top_title_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/title_font_size"
+            android:textColor="@color/title_font_color"
+            android:text="注册"
+           />
+       
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+      		android:layout_marginRight="8dp"
+      		android:paddingLeft="6dp"
+      		android:paddingRight="6dp"
+            android:textSize="@dimen/title_common_font_size"
+            android:textColor="@android:color/white"
+            android:background="@color/top_right_btn_bg_color"
+            android:text="下一步" />
+	        
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      	android:layout_below="@id/top_title_bar"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        
+	        <EditText
+	            android:id="@+id/reg_mobile"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	      		android:padding="6dp"
+    			android:background="@drawable/edit_text_bg"
+    			android:textSize="20sp"
+    			android:singleLine="true"
+    			android:textColorHint="#979797"
+    			android:maxLength="11"
+	            android:inputType="number"
+	            android:hint="请输入本机手机号" >
+
+            <requestFocus />
+	        </EditText>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    </ScrollView>
+</RelativeLayout>
